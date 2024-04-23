@@ -1,5 +1,6 @@
 django
 psycopg
+gunicorn==22.0.0
 django-admin==2.0.2
 django-excel-response2==3.0.6
 django-six==1.0.5
