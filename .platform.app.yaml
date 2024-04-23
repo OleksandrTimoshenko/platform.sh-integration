@@ -73,6 +73,9 @@ hooks:
     # Download the latest version of pip
     python3.10 -m pip install --upgrade pip
 
+    # Install dependencies
+    pip install -r requirements.txt
+
     # Collect static assets
     python manage.py collectstatic    
 
