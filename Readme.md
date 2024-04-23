@@ -21,4 +21,8 @@ platform integration:add \
 
 7. Connect to your env - [instruction](https://docs.platform.sh/development/ssh.html)  
   `# create admin user`  
-  `python manage.py createsuperuser`
+  `python manage.py createsuperuser`  
+
+TODO:  
+1. use platform.sh variables for Django SECRET_KEY
+2. can I add roles for build trigger (for example: I don't want the build to start, unless the readme file has been updated...check GitHub webhook settings)
