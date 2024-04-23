@@ -17,12 +17,14 @@ platform integration:add \
 
 7. Config example [here](https://github.com/platformsh-templates/django3).
 
-8. Now your app is connected to GitHub, by default every push will trigger a new build in platform.sh
+8. Create ENV variable for Django secret:
+`platform variable:create --level project --name DJANGO_SECRET_KEY --value 'YOUR_APP_KEY_HERE' --visible-build true --visible-runtime true`
 
-7. Connect to your env - [instruction](https://docs.platform.sh/development/ssh.html)  
+9. Now your app is connected to GitHub, by default every push will trigger a new build in platform.sh
+
+10. Connect to your env - [instruction](https://docs.platform.sh/development/ssh.html)  
   `# create admin user`  
   `python manage.py createsuperuser`  
 
 TODO:  
-1. use platform.sh variables for Django SECRET_KEY
-2. can I add roles for build trigger (for example: I don't want the build to start, unless the readme file has been updated...check GitHub webhook settings)
+1. can I add roles for build trigger? (for example: I don't want the build to start, unless the readme file has been updated...check GitHub webhook settings)
