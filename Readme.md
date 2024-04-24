@@ -12,8 +12,10 @@ platform integration:add \
   --token <GITHUB_TOKEN>
 ```
 
-6. add Platform.sh  configuration files
-    mkdir -p .platform && touch .platform/services.yaml && touch .platform/routes.yaml && touch .platform.app.yaml
+6. Check Platform.sh  configuration files:
+- .platform/services.yaml
+- .platform/routes.yaml
+- .platform.app.yaml
 
 7. Config example [here](https://github.com/platformsh-templates/django3).
 
@@ -24,7 +26,4 @@ platform integration:add \
 
 10. Connect to your env - [instruction](https://docs.platform.sh/development/ssh.html)  
   `# create admin user`  
-  `python manage.py createsuperuser`  
-
-TODO:  
-1. can I add roles for build trigger? (for example: I don't want the build to start, unless the readme file has been updated...check GitHub webhook settings)
+  `python manage.py createsuperuser`
